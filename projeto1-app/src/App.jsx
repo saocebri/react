@@ -13,7 +13,6 @@ export default class App extends Component {
     var total = n1+n2;
     return total;
   }
-
   render() {
     return (
       <div>
