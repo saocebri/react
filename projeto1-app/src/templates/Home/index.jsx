@@ -5,6 +5,7 @@ import Demo from '../../components/Demo';
 import CompFuncional from '../../components/compFuncional';
 import { Form } from '../../components/form';
 import Parent from '../../components/Parent';
+import State from '../../components/State';
 
 
 export default class Home extends Component {
@@ -41,6 +42,7 @@ export default class Home extends Component {
         <Parent 
         nome = {this.nomes()}
         />
+        <State />
       </div>
 
 
