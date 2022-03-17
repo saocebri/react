@@ -1,9 +1,18 @@
 
-import './App.css';
-import React, { Component } from 'react'
-import Demo from './componentes/Demo'
+import './style.css';
+import React, { Component } from 'react';
+import Demo from '../../components/Demo';
+import CompFuncional from '../../components/compFuncional';
+import { Form } from '../../components/form';
+import Parent from '../../components/Parent';
 
-export default class App extends Component {
+
+export default class Home extends Component {
+
+  nomes() {
+    const nomes = 'Carlos Eduardo';
+    return nomes;
+}
 
   /* endereco() {
     const endereco = 'src/App.jsx'
@@ -15,11 +24,25 @@ export default class App extends Component {
     return total;
   } */
   render() {
+
+    const react = 'react'
     return (
 
       <div className="App">
-       <Demo />
+        <Demo
+        nome = {this.nomes()} 
+        />        
+        <CompFuncional
+        react={react}
+        />
+        <Form 
+        nome = {this.nomes()}
+        />
+        <Parent 
+        nome = {this.nomes()}
+        />
       </div>
+
 
     )
   }
