@@ -17,7 +17,7 @@ export default class addTodo extends Component {
     render() {
         return (
             <div>
-                <input type="text" ref="{this.input}"></input>
+                <input type="text" ref={this.input}></input>
                <button className="btn-insert" onClick={e=>this.addItem(e)}>
                    Adicionar tarefa
                </button>
